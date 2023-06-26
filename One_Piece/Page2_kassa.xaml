@@ -1,0 +1,78 @@
+﻿<Page x:Class="One_Piece.Page2_kassa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:One_Piece"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2_kassa">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="MainList"  Grid.Row="0" Margin="10" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="#FF0EABA5" SelectionChanged="MainList_SelectionChanged" ></DataGrid>
+        <DataGrid x:Name="MainList1"  Grid.Row="3" Margin="10" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="#FF0EABA5" SelectionChanged="MainList1_SelectionChanged" ></DataGrid>
+        <TextBox x:Name="Pay"
+            Grid.Column="2" 
+                 MaxLength="20"
+                     Background="#FF0EABA5"
+                     materialDesign:HintAssist.Hint="Способ оплаты"
+                     VerticalAlignment="Center" Height="25"
+                 ></TextBox>
+        <ComboBox x:Name="Com_staff" 
+                      Grid.Column="2" 
+                      Grid.Row="1"
+                      Margin="5,0,5,0" 
+                      Background="#FF0EABA5"
+                      materialDesign:HintAssist.Hint="Обслуживающий" Height="25"
+                      />
+        <Grid Grid.Column="2" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Add1" Content="Добавить" FontSize="14" Background="#FF0EABA5" Click="Add1_Click" ></Button>
+            <Button x:Name="Update1" Grid.Column="1" Content="Изменить" FontSize="14" Background="#FF0EABA5" Click="Update1_Click" ></Button>
+            <Button x:Name="Delete1" Grid.Column="2" Content="Удалить" FontSize="14" Background="#FF0EABA5" Click="Delete1_Click" ></Button>
+        </Grid>
+        
+        
+        <ComboBox x:Name="Com_printer" 
+                      Grid.Column="2" 
+                      Grid.Row="3"
+                      Margin="5,0,5,0" 
+                      Background="#FF0EABA5"
+                      materialDesign:HintAssist.Hint="Принтер" Height="25"
+                      /> <ComboBox x:Name="Com_order" 
+                      Grid.Column="2" 
+                      Grid.Row="4"
+                      Margin="5,0,5,0" 
+                      Background="#FF0EABA5"
+                      materialDesign:HintAssist.Hint="Заказ" Height="25"
+                      />
+        <Grid Grid.Column="2" Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="Add2" Content="Добавить" FontSize="14" Background="#FF0EABA5" Click="Add2_Click"></Button>
+            <Button x:Name="Update2" Grid.Column="1" Content="Изменить" FontSize="14" Background="#FF0EABA5" Click="Update2_Click" ></Button>
+            <Button x:Name="Delete2" Grid.Column="2" Content="Удалить" FontSize="14" Background="#FF0EABA5" Click="Delete2_Click"></Button>
+        </Grid>
+    </Grid>
+</Page>

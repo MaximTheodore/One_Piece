@@ -1,0 +1,37 @@
+﻿<Window x:Class="One_Piece.Sklad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:One_Piece"
+        mc:Ignorable="d"
+        Title="Sklad" Height="450" Width="800" Background="#FF5ED1C4" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="One"  Grid.Column="0" Content="Производ" Height="50" Background="#FF5ED1C4"  BorderBrush="White" Click="One_Click" ></Button>
+        <Button x:Name="Two"  Grid.Column="1" Content="Фабрика" Height="50"  Background="#FF5ED1C4"  BorderBrush="White" Click="Two_Click" ></Button>
+        <Button x:Name="Three"   Grid.Column="2" Content="Подача" Height="50"   Background="#FF5ED1C4"  BorderBrush="White" Click="Three_Click" ></Button>
+        <Button x:Name="Four"   Grid.Column="3" Content="Марка" Height="50"   Background="#FF5ED1C4"  BorderBrush="White" Click="Four_Click" ></Button>
+        <Button  x:Name="Five"   Grid.Column="4" Content="Тип принтера" Height="50"  Background="#FF5ED1C4"  BorderBrush="White" Click="Five_Click" ></Button>
+        <Button x:Name="Six"  Grid.Column="5" Content="Принтер" Height="50"  Background="#FF5ED1C4"  BorderBrush="White" Click="Six_Click" ></Button>
+        <Frame x:Name="Page" Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="6" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

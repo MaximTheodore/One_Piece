@@ -1,0 +1,28 @@
+﻿<Window x:Class="One_Piece.AdminIcon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:One_Piece"
+        mc:Ignorable="d"
+        Title="AdminIcon" Height="450" Width="1000" Background="#FF19B8B2" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="Page1" Grid.Row="1" Grid.RowSpan="4" Grid.ColumnSpan="4" NavigationUIVisibility="Hidden"></Frame>
+        <Button x:Name="Roles" Content="Роли" Height="50" FontSize="25"  Background="#FF5ED1C4"  Click="Roles_Click" BorderBrush="White" Margin="0,0,0,45"></Button>
+        <Button x:Name="Inform" Content="Пароли" FontSize="25" Background="#FF5ED1C4" Click="Inform_Click"  BorderBrush="White" Margin="0,0,0,45" Height="50" Grid.Column="1" />
+        <Button x:Name="Passwords" Content="Информация" FontSize="25"  Grid.Column="3" Background="#FF5ED1C4" Margin="0,0,0,45" Height="50"  Click="Passwords_Click" BorderBrush="White"></Button>
+
+    </Grid>
+</Window>

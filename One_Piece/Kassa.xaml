@@ -1,0 +1,31 @@
+﻿<Window x:Class="One_Piece.Kassa"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:One_Piece"
+        mc:Ignorable="d"
+        Title="Kassa" Height="450" Width="800" Background="#FF0EABA5" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Leftbtn" Content="Касса" Background="#FF0EABA5" BorderBrush="White" Click="Leftbtn_Click"></Button>
+        <Button x:Name="Rightbtn" Content="Чеки" Grid.Column="1" BorderBrush="White" Background="#FF0EABA5"></Button>
+        <Button x:Name="Rightbtn2" Content="Оставшиеся" Grid.Column="2" BorderBrush="White" Background="#FF0EABA5" Click="Rightbtn2_Click"></Button>
+        <Frame x:Name="Page" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="7" ></Frame>
+    </Grid>
+</Window>
